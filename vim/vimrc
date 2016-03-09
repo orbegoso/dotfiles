@@ -1,0 +1,33 @@
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+".. reload vim when change is made
+augroup reload_vimrc
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END 
+
+" turn on column numbering
+:set number
+" use indentation of previous line
+set autoindent
+" use intelligent indentation for C
+set smartindent
+" configure tabwidth and insert spaces instead of tabs
+set tabstop=4        " tab width is 4 spaces
+set softtabstop=4
+set shiftwidth=4     " indent also with 4 spaces
+
+" use space characters whenever tab key is pressed
+set expandtab
+" highlight matching braces
+set showmatch
+" show whitespace
+set nolist
+" disable vi compatibility
+set nocompatible
+
+syntax on
+
+
