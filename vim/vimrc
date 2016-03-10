@@ -2,6 +2,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+set laststatus=2
+
 ".. reload vim when change is made
 augroup reload_vimrc
     autocmd!
