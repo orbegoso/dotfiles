@@ -4,7 +4,7 @@ call pathogen#helptags()
 set laststatus=2
 
 colorscheme default
-set background=dark
+set background=light
 
 " reload vim when change is made
 augroup reload_vimrc
