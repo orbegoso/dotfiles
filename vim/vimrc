@@ -6,11 +6,13 @@ set laststatus=2
 colorscheme default
 set background=light
 
+set relativenumber
+
 " reload vim when change is made
 augroup reload_vimrc
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END 
+augroup END
 
 " turn on column numbering
 :set number
