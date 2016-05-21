@@ -1,4 +1,4 @@
 # Dotfiles
 
-# tmux.conf
+tmux.conf
 ln -s ~/Dotfiles/tmux.conf ~/.tmux.conf
