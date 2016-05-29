@@ -1,4 +1,8 @@
 # Dotfiles
 
-tmux.conf
-ln -s ~/Dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/dotfiles/vim ~/.vim
+
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+
+git config --global core.excludesfile ~/dotfiles/gitignore
