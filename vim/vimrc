@@ -3,8 +3,11 @@ execute pathogen#helptags()
 
 set laststatus=2
 
-colorscheme default
-set background=light
+" set termguicolors
+set term=screen-256color
+syntax enable
+set background=dark
+colorscheme gruvbox
 
 set relativenumber
 
@@ -29,9 +32,6 @@ set softtabstop=4
 
 set shiftwidth=4 
 
-" use space characters whenever tab key is pressed
-"set expandtab
-
 " highlight matching braces
 set showmatch
 
@@ -43,8 +43,6 @@ set listchars=tab:▸\ ,eol:¬
 
 " disable vi compatibility
 set nocompatible
-
-syntax on
 
 " provide Python 3 completion with YCM
 let g:ymc_python_binary_path = '/usr/bin/python3'
@@ -60,3 +58,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_python_python_exec = '/usr/bin/python3'
+
